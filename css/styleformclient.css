@@ -1,0 +1,178 @@
+:root{
+    --red: #922B21;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    overflow-y: scroll; 
+}
+
+section{
+    padding: 32px 9%;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 250px;
+    border-radius: 80px;
+    background: #333;
+    color: #fff;
+    padding: 50px 40px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.btn:hover{
+    background: var(--red);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 25px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.80px 16px rgba(0,0,0,.1);
+}
+
+header .logo img{
+    width: 200px;
+    margin-right: 24px;
+}
+
+header .navbar a{
+    font-size: 20px;
+    padding: 0 20px;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--red);
+}
+
+header .icons a{
+    font-size: 30px;
+    color: #333;
+    margin-left: 22px;
+}
+
+
+header .icons a:hover{
+    color: var(--red);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 25px;
+    color: #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: .15px solid rgba(0,0,0,.3);
+    display: none;
+    margin-left: -15px;
+
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 32px;
+    }
+    section{
+        padding: 32px;
+    }
+    .inicio {
+        background-position: left;
+    }
+}
+
+@media (max-width:850px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .16 px solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 10px;
+        padding: 5px;
+        background: #F8F9F9;
+        border: 6px solid #5D6D7E;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 80px;
+    }
+
+    .home .content span{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

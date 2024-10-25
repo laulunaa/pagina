@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="../css/stylecontra.css">
+</head>
+<body>
+    <div class="fondo">
+        <div class="caja">
+            <div class="logo">
+                <img src="../img/logoo.png" alt="logoLR">
+            </div>
+            <h1>Recuperar contraseña</h1>
+            <form action="../php/recupera_contra.php" method="post" id="recuperar" class="input-group">
+                <input name="usuario" id="usuario" type="text" class="input-field" placeholder="Nombre Usuario" required>
+                <input name="correo" id="correo" type="email" class="input-field" placeholder="Correo" required>
+                <a href="../index.html" button type="submit" class="submit-btn">Enviar</a>  
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

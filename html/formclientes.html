@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styleformclient.css"/>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+
+      <a href="../index.html" class="logo">
+        <img src="../img/nombre.jpg" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="../html/formproducts.html">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="icons">
+        <a href="../html/formConfirmacion.html" class="fas fa-heart"></a>
+        <a href="../html/formtransporte.html" class="fas fa-shopping-cart"></a>
+        <a href="../html/formclientes.html" class="fas fa-user"></a>
+      </div>
+    </header>
+   
+    <section class="Formulario" id="Formulario">
+      <h1 class="h1"><span>Clientes</span></h1>
+      <div class="form">
+        <form action="">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="box" required>
+          <input type="email" name="correo" id="correo" placeholder="Correo" class="box" required>
+          <input type="number" name="numero" id="numero" placeholder="Número" class="box" required>
+          <textarea name="mensaje" id="mensaje" class="box" placeholder="Mensaje" cols="30" rows="10"></textarea>
+          <input type="submit" value="Enviar" class="btn">
+        </form>
+      </div>
+
+    
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Formulario Transporte</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../css/styleformtransp.css" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+
+      <a href="../index.html" class="logo">
+        <img src="../img/nombre.jpg" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="../html/principal.html">Inicio</a>
+        <a href="../html/formproducts.html">Productos</a>
+        <a href="../html/principal.html">Contacto</a>
+      </nav>
+      <div class="icons">
+        <a href="../html/formConfirmacion.html" class="fas fa-heart"></a>
+        <a href="../html/formtransporte.html" class="fas fa-shopping-cart"></a>
+        <a href="../html/formclientes.html" class="fas fa-user"></a>
+      </div>
+    </header>
+  </body>
+  <section class="formtransporte">
+    <div class="fondo">
+      <div class="caja">
+          <div class="logo">
+              <img src="../img/logoo.png" alt="logoLR">
+          </div>
+          <h1>Transporte</h1>
+          <form method="post" id="Transporte" class="input-group">
+              <input type="text" class="input-field" placeholder="Nombre" required>
+              <input type="text" class="input-field" placeholder="Código Transporte" required>
+              <input type="cel" class="input-field" placeholder="Número Celular" required>
+              <input type="text" class="input-field" placeholder="Dirección" required>
+              <input type="text" class="input-field" placeholder="Barrio" required>
+              <input type="text" class="input-field" placeholder="Ciudad" required>
+              <input type="text" class="input-field" maxlength="180" placeholder="Especificaciones" required>
+              <a href="../html/principal.html" button type="submit" class="submit-btn">Entrar</a>  
+          </form>
+      </div>
+  </div>
+
+  </section>
+</html>
